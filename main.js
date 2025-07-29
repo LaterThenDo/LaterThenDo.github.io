@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
 	
     // Initialise the game:
     initGame();
+
+    // initialise the full screen:
+    initFullScreen();
 });
 
 // Menu bar:
@@ -647,4 +650,46 @@ function initResetBtn() {
             }
         });
     });
+}
+
+
+// Full screen:
+const enterFS = document.getElementById("full-screen-icon");
+const exitFS = document.getElementById("exit-full-screen-icon");
+const enterContainer = document.querySelector(".full-screen");
+const exitContainer = document.querySelector(".exit-full-screen");
+
+function initFullScreen(){
+    enterFS.addEventListener("click",enterFullscreen);
+    exitFS.addEventListener("click",exitFullscreen);
+}
+
+
+function enterFullscreen() { //must be called by user generated event
+    if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+    } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+        document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+        document.documentElement.webkitRequestFullscreen();
+    } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+        document.documentElement.msRequestFullscreen();
+    }
+
+    enterContainer.classList.remove("showIcon");
+    exitContainer.classList.add("showIcon");
+}
+function exitFullscreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) { // Firefox
+        document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) { // Chrome, Safari, and Opera
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { // IE/Edge
+        document.msExitFullscreen();
+    }
+
+    exitContainer.classList.remove("showIcon");
+    enterContainer.classList.add("showIcon");
 }
