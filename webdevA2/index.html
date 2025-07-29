@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <title>Judo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+<header>
+     <!-- Page Label -->
+    <div id="label" class="page-label">
+        <h6 id="label-btn">Judo</h6>
+
+        <nav class="menu">
+            <a href="#history">History</a>
+            <a href="#techniques">Techniques</a>
+            <a href="#sparring">Sparring</a>
+            <a href="#competition">Competition</a>
+            <a href="#game">Game</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="pages">
+
+    <!-- History -->
+    <section id="history" class="page">
+        <h3>History</h3>
+        <p>
+            Back in May 1882, Jigoro Kano took 
+            inspiration from traditional combat techniques
+            and developed a new system that aimed to train 
+            not just the body, but also the mind and character. 
+            He called it judo.
+        </p>
+
+        <p>
+            At first, judo was mainly seen as a way to defend 
+            oneself. But over time, people began to realise its 
+            true value, not just as a martial art, but also as a 
+            powerful tool for physical and personal development.
+        </p>
+
+        <p>
+            Judo reached a global stage when it became an Olympic 
+            sport during the 1964 Tokyo Games. Today, the 
+            International Judo Federation (IJF) includes over 200 
+            national federations and five continental unions.
+        </p>
+
+        <!-- Hyperlink on Judo History -->
+        <a href="https://youtu.be/YiYt9-Iartc?si=-JnMS9E5NTSE1aLf" target="_blank">
+            Video on Judo History
+        </a>
+    </section>
+
+    <!-- Techniques -->
+    <section id="techniques" class="page hidden">
+        <h3>Common Techniques</h3>
+        <!-- Technique is displayed in slides -->
+        <div id="technique-layout">
+            <div id="technique-container">
+                <!-- Osoto Gari -->
+                <div class="technique moveRightToCenter">
+                    <div class="photo">
+                        <img src="images/osoto-gari.jpg" alt="Osoto Gari" title="Osoto Gari">
+                    </div>
+
+                    <div class="name">
+                        Osoto Gari
+                    </div>
+
+                    <div class="desc">
+                        Osoto Gari is one of the most fundamental 
+                        and powerful throws in judo. The name 
+                        means "major outer reap" in Japanese. In 
+                        this technique, the attacker (tori) steps 
+                        beside their opponent (uke), usually pulling 
+                        them slightly off balance toward the back. 
+                        Then, the tori uses their to sweep the uke's 
+                        leg from the outside while driving them 
+                        backward to the ground. It is a clean, effective 
+                        move that relies on timing, balance, and control, 
+                        and is often one of the first throws beginners 
+                        learn in judo.
+                    </div>  
+                </div>
+
+                <!-- Ouchi Gari -->
+                <div class="technique">
+                    <div class="photo">
+                        <img src="images/ouchi-gari.jpg" alt="Ouchi Gari" title="Ouchi Gari">
+                    </div>
+
+                    <div class="name">
+                        Ouchi Gari
+                    </div>
+
+                    <div class="desc">
+                        Ouchi Gari, which means "major inner reap" in Japanese, 
+                        is a classic judo throw that targets the opponent's inner 
+                        leg. In this technique, the attacker (tori) steps in close 
+                        to the opponent (uke), usually pulling them slightly forward 
+                        and to the side to break their balance. Then, the tori uses 
+                        their own leg to sweep the uke's leg from the inside while 
+                        pushing them backward, causing them to fall. It's a smooth 
+                        and effective move, often used in combination with other 
+                        throws to catch the opponent off guard.
+                    </div>  
+                </div> 
+
+                <!-- Ippon Seoi Nage -->
+                <div class="technique">
+                    <div class="photo">
+                        <img src="images/ippon-seoi-nage.jpg" alt="Ippon Seoi Nage" title="Ippon Seoi Nage">
+                    </div>
+
+                    <div class="name">
+                        Ippon Seoi Nage
+                    </div>
+
+                    <div class="desc">
+                        Ippon Seoi Nage, which means 
+                        "one-arm shoulder throw" in 
+                        Japanese, is a fast and dynamic 
+                        judo technique where the attacker 
+                        (tori) throws the opponent (uke) 
+                        over their shoulder. To execute it, 
+                        the tori grips one of the uke's 
+                        arms, turns in closely, and drops 
+                        their body low while pulling the 
+                        arm over their shoulder. With a 
+                        strong lift and twist, the uke is 
+                        flipped over and lands on their 
+                        back. This throw is popular for 
+                        its speed and impact, and when 
+                        done cleanly, it can score an 
+                        immediate ippon (full point) in 
+                        a judo match.
+                    </div>  
+                </div> 
+
+                <!-- Harai Goshi -->
+                <div class="technique">
+                    <div class="photo">
+                        <img src="images/harai-goshi.jpg" alt="Harai Goshi" title="Harai Goshi">
+                    </div>
+
+                    <div class="name">
+                        Harai Goshi
+                    </div>
+
+                    <div class="desc">
+                        Harai Goshi, which means 
+                        "sweeping hip throw" in Japanese, 
+                        is a powerful judo technique where 
+                        the attacker (tori) uses their hip 
+                        and leg to throw the opponent (uke) 
+                        to the ground. The tori first pulls 
+                        the uke forward to break their 
+                        balance, then turns their body 
+                        and places their hip across the 
+                        uke's waist. At the same time, the 
+                        tori sweeps the uke's leg upward 
+                        and outward with their own leg, 
+                        using the hip as a pivot point to 
+                        flip the uke over. It is a strong 
+                        and graceful throw, often used by 
+                        more experienced judokas for its 
+                        effectiveness and fluid motion.
+                    </div>  
+                </div> 
+            </div>
+
+            <!-- CSS Sprites to display arrows -->
+            <button id="previousBtn"></button>
+            <button id="nextBtn"></button>
+        </div>
+
+        <!-- Technique Quiz -->
+        <div id="technique-quiz">
+            <h3>Quiz</h3>
+            <fieldset>
+                <legend>1. Which technique means "major outer reap"?</legend>
+                <label><input type="radio" name="q1" value="Osoto Gari"> Osoto Gari<br></label>
+                <label><input type="radio" name="q1" value="Ouchi Gari"> Ouchi Gari<br></label>
+                <label><input type="radio" name="q1" value="Harai Goshi"> Harai Goshi<br></label>
+                <label><input type="radio" name="q1" value="Ippon Seoi Nage"> Ippon Seoi Nage<br></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Which throw uses a one-arm shoulder technique?</legend>
+                <label><input type="radio" name="q2" value="Osoto Gari"> Osoto Gari<br></label>
+                <label><input type="radio" name="q2" value="Ouchi Gari"> Ouchi Gari<br></label>
+                <label><input type="radio" name="q2" value="Harai Goshi"> Harai Goshi<br></label>
+                <label><input type="radio" name="q2" value="Ippon Seoi Nage"> Ippon Seoi Nage<br></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Which technique uses the hip and a sweeping motion?</legend>
+                <label><input type="radio" name="q3" value="Osoto Gari"> Osoto Gari<br></label>
+                <label><input type="radio" name="q3" value="Ouchi Gari"> Ouchi Gari<br></label>
+                <label><input type="radio" name="q3" value="Harai Goshi"> Harai Goshi<br></label>
+                <label><input type="radio" name="q3" value="Ippon Seoi Nage"> Ippon Seoi Nage<br></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Which technique sweeps the opponent's inner leg?</legend>
+                <label><input type="radio" name="q4" value="Osoto Gari"> Osoto Gari<br></label>
+                <label><input type="radio" name="q4" value="Ouchi Gari"> Ouchi Gari<br></label>
+                <label><input type="radio" name="q4" value="Harai Goshi"> Harai Goshi<br></label>
+                <label><input type="radio" name="q4" value="Ippon Seoi Nage"> Ippon Seoi Nage<br></label>
+            </fieldset>
+
+            <button id="btnSubmit">Submit Quiz</button>
+            <h3 id="scorebox">Score: 0</h3>
+        </div>
+    </section>
+
+    <!-- Sparring / Randori -->
+    <section id="sparring" class="page hidden">
+        <h3>Randori (Sparring)</h3>
+        <p>
+            Randori in judo is a form of free practice 
+            where two judokas spar in a controlled and 
+            respectful manner to apply techniques in a 
+            realistic setting. Unlike in formal matches, randori 
+            allows both players to move freely and attempt 
+            throws, holds, or submissions without a set 
+            outcome. The goal isn't to win, but to improve 
+            timing, balance, and technique under pressure.
+        </p>
+        <p>
+            There are different intensities and focuses in 
+            randori, sometimes it is more technical to refine form, 
+            while sometimes it is more 
+            competitive to help judokas
+            test their techniques under pressure.
+            Through regular randori, judokas learn to adapt to 
+            different opponents, react instinctively, and apply 
+            techniques more effectively in real situations.
+        </p>
+
+        <!-- Different types of randori -->
+        <div id="randori-types">
+            <div class="interactive-section">
+                <button><strong>Types of Randori</strong></button>
+                <div class="interactive-target hidden"> 
+                    <p> 
+                        There are 2 types of randori in Judo with each randori training
+                        a different area of your judo match.
+                    </p>
+                <ul>
+                        <li>
+                            <strong>Tachi-waza Randori (Standing Techniques)</strong>
+                            <p>
+                                Tachi-waza randori focuses on grappling while
+                                both judoka are standing up on their feet. The goal
+                                is to simply control your opponent, break their balance,
+                                and execute clean throws and counters.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>Ne-waza Randori (Ground Techniques)</strong>
+                            <p>
+                                Ne-waza Randori on the other hand is grappling while
+                                both judoka are on the ground. Ne-waza Randori includes
+                                pins, chokes, and joint locks, depending on the
+                                rank and rules. It trains one's pressure and control,
+                                escapes from pins or chokes, and transitions from pins
+                                to submissions.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Common mistakes in randori -->
+        <div id="randori-mistakes">
+            <div class="interactive-section">
+                <button><strong>Common Mistakes</strong></button>
+                <div class="interactive-target hidden">
+                    <p>
+                        Mistakes are meant to be made during
+                        randori. What's important is to learn
+                        from them.
+                        Some common mistakes that beginners
+                        make during randori are the following:
+                    </p>
+
+                    <div class="cards">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-cover">
+                                    Relying purely on strength
+                                </div>
+
+                                <div class="card-contents card-flipped">
+                                    <p>
+                                        Using brute force will tire you 
+                                        out faster and develop bad habits that
+                                        are ineffective against better or heavier
+                                        opponents. You should focus on your technique,
+                                        timing, and balance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-cover">
+                                    Repeating the same throw
+                                </div>
+
+                                <div class="card-contents card-flipped">
+                                    <p>
+                                        This makes you predictable, and prevents
+                                        you from growing and improving yourself,
+                                        and also allows your opponent to counter 
+                                        a lot easier. Try a different throw or setup
+                                        every randori session.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-cover">
+                                    Not controlling grips
+                                </div>
+
+                                <div class="card-contents card-flipped">
+                                    <p>
+                                        Letting your opponent control you is a 
+                                        big problem. They would be able to control
+                                        you far more efficiently, leaving you 
+                                        vulnerable to even the smallest throws.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Competition -->
+    <section id="competition" class="page hidden">
+        <h3>Competition</h3>
+        <p>
+            Judo competitions are matches where two judokas 
+            try and throw, pin, or submit each other to 
+            score points and win. The goal is to use 
+            controlled techniques to either score 1 full point (ippon),
+            or by holding the opponent down for a 
+            certain amount of time. If no ippon is scored, the judoka 
+            with the most points at the end wins.
+        </p>
+        <p>
+            Matches are divided by weight and age categories 
+            to keep things fair. There are also time limits, 
+            which is usually 4 minutes. If the score is tied when time runs 
+            out, the match goes into golden score, a sudden death 
+            overtime where the first person to score wins. Judo 
+            competitions are not just about strength, they test 
+            balance, timing, technique, and strategy, all while 
+            following strict rules that promote safety, respect, 
+            and fair play.
+        </p>
+
+        <div id="comp-contents">
+            <!-- How to win -->
+            <div id="scoring">
+                <div class="interactive-section">
+                    <button><strong>How to Win</strong></button>
+                    <div class="interactive-target hidden">
+                        <ul>
+                            <li>
+                                <strong>Ippon (Full point)</strong>
+                                <div class="point-reasons">
+                                    <ul>
+                                        <li>The opponent lands flat on their 
+                                            back after a clean throw</li>
+                                        <li>The opponent was pinned to the ground 20 seconds</li>
+                                        <li>The opponent submits after an arm-lock or choke</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <strong>Waza-ari (Half point)</strong>
+                                <div class="point-reasons">
+                                    <ul>
+                                        <li>The opponent was thrown, but did not land flat on their back.</li>
+                                        <li>The opponent was pinned to the ground 10 seconds</li>
+                                        <li>2 waza-ari = ippon!</li>
+                                    </ul>
+                                </div>  
+                            </li>
+                            
+                            <li>
+                                <strong>Shido (Penalty)</strong>
+                                <div class="point-reasons">
+                                    <ul>
+                                        <li>Acts as a warning for breaking the rules</li>
+                                        <li>3 shidos = disqualification</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Possible penalties -->
+            <div id="penalties">
+                <div class="interactive-section">
+                    <button><strong>Shido (Minor Penalty)</strong></button>
+                    <div class="interactive-target hidden">
+                        <p>A shido is called when: </p>
+                        <div class="point-reasons">
+                            <ul>
+                                <li>A judoka stalls or runs away from their opponent</li>
+                                <li>A judoka grabs their opponent's leg</li>
+                                <li>A judoka is too defensive</li>
+                                <li>A judoka uses illegal grips</li>
+                            </ul>
+                        </div>
+
+                        <h4>Hansoku-make (Major Penalty)</h4>
+                        <p>A hansoku-make is called when a judoka gets 3 shidos and result in instant loss.
+                            But also can be called when:
+                        </p>
+
+                        <div class="point-reasons">
+                            <ul>
+                                <li>A judoka does a dangerous throw</li>
+                                <li>A judoka does an illegal technique</li>
+                                <li>A judoka intentionally injures their opponent</li>
+                                <li>A judoka fights dirty</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple judo game to test reaction time, timing, and speed -->
+    <section id="game" class="page hidden">
+        <h3>Judo Game</h3>
+        <div id="game-window">
+            <!-- Start button -->
+            <div id="game-start-menu">
+                <button id="game-start-btn">START</button>
+            </div>
+
+            <!-- Game window -->
+            <div id="ongoing-game" class="hidden">
+                <!-- Game status text -->
+                <div id="game-status">
+                    Choose your next move
+                </div>
+
+                <div id="status-image">
+                    <div id="opponent-entry" class="hidden"></div>
+                    <div id="opponent-win" class="hidden"></div>
+                    <div id="player-win" class="hidden"></div>
+                    <div id="player-counter" class="hidden"></div>
+                    <div id="opponent-counter" class="hidden"></div>
+                </div>
+
+                <!-- Play again button -->
+                <div id="play-again-container" class="hidden">
+                    <button id="play-again">Play Again</button>
+                </div>
+
+                <!-- Fight / Counter button -->
+                <div id="round-options" class="hidden">
+                    <button id="fight-btn">Fight</button>
+                    <button id="counter-btn">Counter</button>
+                </div>
+
+                <!-- Reaction time tester -->
+                <div id="reaction-test" class="hidden">
+                    Wait for green...
+                </div>
+
+                <!-- Timing tester -->
+                <div id="counter-test" class="hidden">
+                    <div id="counter-line"></div>
+                    <div id="counter-range"></div>
+                </div>
+
+                <!-- Aim trainer -->
+                <div id="aim-trainer" class="hidden">
+                    <div id="aim-trainer-window">
+                        <div id="aim-trainer-target"></div>
+                    </div>
+
+                    <div id="aim-text">
+                        <p id="aim-time-left">Time left: 5</p>
+                        <p id="aim-accuracy">Accuracy: 0% (>75%)</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    </div>
+    
+</main>
+
+<footer>
+    <!-- Copyright -->
+    <div class="credit">
+        Copyright &copy; 2025 Nirob Miazee
+    </div>
+
+    <!-- Location -->
+    <div class="location">
+        📍Singapore
+    </div>
+
+    <!-- QR Code -->
+    <div class="qr-code">
+        <img id="qrCodeImg" src="images/qrcode.png" alt="mobile-qr">
+    </div>
+
+    <!-- Full screen -->
+    <div class="exit-full-screen">
+        <img id="exit-full-screen-icon" src="images/exit-full-screen.png" alt="Exit full screen">
+    </div>
+
+    <div class="full-screen showIcon">
+        <img id="full-screen-icon" src="images/full-screen.png" alt="Full screen">
+    </div>
+</footer>
+
+</body>
+</html>
